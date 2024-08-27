@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>HTML LIST</title>
+        <style>
+            /* displaying text or emoji's instead of markers */
+            .emoji li::marker{
+                content: "😁";
+            }
+            .emoji li:nth-child(2)::marker{
+                content: "😎";
+            }
+            .emoji li:nth-child(3)::marker{
+                content: "🎈";
+            }
+            /* displaying images instead of markers  */
+           li:last-child{
+                list-style-image: url(./check.png) !important;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <center>
+            <h1>HTML LISTS</h1>
+            <p>There are 3 types of list.</p>
+        </center>
+        <hr>
+        <p>1) Ordered or Number list (Using OL tag)</p>
+        <p>2) Unordered or Bullet list (Using UL tag)</p>
+        <p>3) Description List (Using DL tag)</p>
+
+        <hr>
+        <h1>2) Unordered or Bullet list (Using UL tag)</h1>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT JS</li>
+            <li>NODE JS</li>
+            <li>EXPRESS JS</li>
+            <li>MONGOO DB</li>
+        </ul>
+
+        <h1>Unordered list types</h1>
+        <ul>
+            <li>Disc (default)</li>
+            <li>circle</li>
+            <li>square</li>
+            <li>none</li>
+        </ul>
+        <hr>
+        <br>
+        <hr>
+
+        <ul type="disc">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT JS</li>
+            <li>NODE JS</li>
+            <li>EXPRESS JS</li>
+            <li>MONGOO DB</li>
+        </ul>
+        <hr>
+        <ul type="circle">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT JS</li>
+            <li>NODE JS</li>
+            <li>EXPRESS JS</li>
+            <li>MONGOO DB</li>
+        </ul>
+        <hr>
+        <ul type="square">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT JS</li>
+            <li>NODE JS</li>
+            <li>EXPRESS JS</li>
+            <li>MONGOO DB</li>
+        </ul>
+
+        <ul type="none">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT JS</li>
+            <li>NODE JS</li>
+            <li>EXPRESS JS</li>
+            <li>MONGOO DB</li>
+        </ul>
+        
+        <h1>ADDING EMOJI's</h1>
+        <ul class="emoji">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT JS</li>
+            <li>NODE JS</li>
+            <li>EXPRESS JS</li>
+            <li>MONGOO DB</li>
+        </ul>
+
+        <h1>Displaying Nested Unordered list</h1>
+        <ul>
+            <li>
+                <h4>HTML</h4>
+                <ul>
+                    <li>HTML4</li>
+                    <li>HTML5</li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>CSS</h4>
+                <ul>
+                    <li>CSS</li>
+                    <li>CSS3</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
